@@ -1,0 +1,25 @@
+def cari_judul():
+    """
+    Mencari buku berdasarkan judul.
+    
+    Fungsi ini meminta input dari pengguna untuk kata kunci judul buku
+    dan menampilkan semua buku yang judulnya mengandung kata kunci tersebut.
+    Pencarian bersifat case-insensitive.
+    
+    Returns:
+        None
+    
+    Examples:
+        Input: "harry"
+        Output: Menampilkan "Harry Potter and the Sorcerer's Stone"
+    """
+    print("\n=== Cari Buku Berdasarkan Judul ===")
+    query = input("Masukkan judul buku: ").lower()
+    hasil = [item for item in buku if query in item['judul'].lower()]
+    
+    if hasil:
+        for item in hasil:
+            print(f"Judul: {item['judul']}, Penulis: {item['penulis']}, Genre: {item['genre']}")
+    else:
+        print("Buku tidak ditemukan.")
+    input("\nEnter untuk kembali ke menu...")
