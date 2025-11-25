@@ -1,0 +1,25 @@
+def cari_genre():
+    """
+    Mencari buku berdasarkan genre.
+    
+    Fungsi ini meminta input dari pengguna untuk kata kunci genre
+    dan menampilkan semua buku yang genrenya mengandung kata kunci tersebut.
+    Pencarian bersifat case-insensitive.
+    
+    Returns:
+        None
+    
+    Examples:
+        Input: "fantasi"
+        Output: Menampilkan semua buku bergenre Fantasi
+    """
+    print("\n=== Cari Buku Berdasarkan Genre ===")
+    query = input("Masukkan genre: ").lower()
+    hasil = [item for item in buku if query in item['genre'].lower()]
+    
+    if hasil:
+        for item in hasil:
+            print(f"Judul: {item['judul']}, Penulis: {item['penulis']}, Genre: {item['genre']}")
+    else:
+        print("Buku tidak ditemukan.")
+    input("\nEnter untuk kembali ke menu...")
