@@ -1,0 +1,25 @@
+def cari_penulis():
+    """
+    Mencari buku berdasarkan nama penulis.
+    
+    Fungsi ini meminta input dari pengguna untuk kata kunci nama penulis
+    dan menampilkan semua buku yang nama penulisnya mengandung kata kunci tersebut.
+    Pencarian bersifat case-insensitive.
+    
+    Returns:
+        None
+    
+    Examples:
+        Input: "orwell"
+        Output: Menampilkan semua buku karya George Orwell
+    """
+    print("\n=== Cari Buku Berdasarkan Penulis ===")
+    query = input("Masukkan nama penulis: ").lower()
+    hasil = [item for item in buku if query in item['penulis'].lower()]
+    
+    if hasil:
+        for item in hasil:
+            print(f"Judul: {item['judul']}, Penulis: {item['penulis']}, Genre: {item['genre']}")
+    else:
+        print("Buku tidak ditemukan.")
+    input("\nEnter untuk kembali ke menu...")
