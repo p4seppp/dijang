@@ -26,11 +26,11 @@ Panduan Intalasi
 Panduan Menjalankan
 1)	Buka file dan Run 
 2)	Navigasi Menu Setelah Run (Pilih No 0-4 untuk mengakses fitur pencarian)
-•	No 1: Melihat daftar semua buku 
-•	No 2: Mencari buku berdasarkan judul
-•	No 3: Mencari buku berdasarkan penulis 
-•	No 4: Mencari buku berdasarkan genre 
-•	No 0: Keluar dari program
+No 1: Melihat daftar semua buku 
+No 2: Mencari buku berdasarkan judul
+No 3: Mencari buku berdasarkan penulis 
+No 4: Mencari buku berdasarkan genre 
+No 0: Keluar dari program
 
 Contoh: Untuk mencari buku fantasi, pilih opsi 4 dan ketik "fantasi". Program akan menampilkan semua buku dengan genre Fantasi yang terdata.
 
