@@ -16,3 +16,19 @@ FITUR UTAMA
     Setelah input dari pengguna untuk kata kunci genre, akan menampilkan semua buku yang genrenya mengandung kata kunci
     tersebut. (Case-insensitive)
 
+Panduan Intalasi
+1)	Buka Visual Code Studio
+2)	Pada Menu Utama Klik ‘Clone Git Rpository’
+3)	Masukkan Link Repository (https://github.com/p4seppp/dijang)
+4)	Buat Folder untuk Clone 
+
+Panduan Menjalankan
+1)	Buka file dan Run 
+2)	Navigasi Menu Setelah Run (Pilih No 0-4 untuk mengakses fitur pencarian)
+No 1: Melihat daftar semua buku 
+No 2: Mencari buku berdasarkan judul
+No 3: Mencari buku berdasarkan penulis 
+No 4: Mencari buku berdasarkan genre 
+No 0: Keluar dari program
+
+Contoh: Untuk mencari buku fantasi, pilih opsi 4 dan ketik "fantasi". Program akan menampilkan semua buku dengan genre Fantasi yang terdata.
