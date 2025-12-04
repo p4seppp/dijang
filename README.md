@@ -90,6 +90,6 @@ flowchart TD
 Kontributor
 | No | Nama Lengkap | NIM | Akun GitHub | Peran |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| 1 | Joseph Adi Sanuri  | 250211060112  | [Content Cell](https://github.com/p4seppp)  | Project Maintainer  |
-| 2 | Kezia Florezita  | 250211060094  | [Content Cell](https://github.com/dokjaakim)  | Contributor  |
-| 3 | Gamaliel Calvyn Hizkia Kaligis  | 250211060111  | [Content Cell](https://github.com/gamlklgs)  | Contributor  |
+| 1 | Joseph Adi Sanuri  | 250211060112  | (https://github.com/p4seppp)  | Project Maintainer  |
+| 2 | Kezia Florezita  | 250211060094  | (https://github.com/dokjaakim)  | Contributor  |
+| 3 | Gamaliel Calvyn Hizkia Kaligis  | 250211060111  | (https://github.com/gamlklgs)  | Contributor  |
