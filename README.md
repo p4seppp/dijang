@@ -34,7 +34,7 @@ No 0: Keluar dari program
 
 Contoh: Untuk mencari buku fantasi, pilih opsi 4 dan ketik "fantasi". Program akan menampilkan semua buku dengan genre Fantasi yang terdata.
 
-Dokumen Teknis Flowchart:
+Dokumentasi Teknis Flowchart:
 ```mermaid
 flowchart TD
     A([Start]) --> B(Inisialisasi data buku)
