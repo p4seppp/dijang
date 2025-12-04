@@ -1,4 +1,5 @@
-JUDUL UTAMA: BookHunt
+JUDUL UTAMA: 
+BookHunt
 
 PENDAHULUAN
 Book Hunt merupakan aplikasi untuk pencarian buku berbasis terminal yang memungkinkan pengguna untuk mengelola dan mencari koleksi buku dengan mudah. Program ini case-insensitive dan memiliki fitur untuk melihat daftar lengkap buku, serta melakukan pencarian buku berdasarkan tiga kategori: judul, penulis, dan genre. Data buku mencakup informasi judul, nama penulis, dan genre, dengan koleksi yang beragam mulai dari fiksi klasik, fantasi, hingga pengembangan diri. 
@@ -32,3 +33,63 @@ No 4: Mencari buku berdasarkan genre
 No 0: Keluar dari program
 
 Contoh: Untuk mencari buku fantasi, pilih opsi 4 dan ketik "fantasi". Program akan menampilkan semua buku dengan genre Fantasi yang terdata.
+
+Dokumen Teknis Flowchart:
+```mermaid
+flowchart TD
+    A([Start]) --> B(Inisialisasi data buku)
+    B --> C(Tampilan Menu:
+    1. List semua buku
+    2. Cari berdasarkan judul
+    3. Cari berdasarkan penulis
+    4. Cari berdasarkan genre
+    0. End Program)
+    C --> D{Input dari user}
+    D --> |1| E(Tampilkan semua buku)
+    D --> |2| F(Input kata kunci judul)
+    D --> |0| G(End Program)
+    D --> |Lainnya| X(Tampilkan pesan error:
+    Pilihan tidak valid)
+    X --> C
+    D --> |3| H(Input kata kunci penulis)
+    D --> |4| I(Input kata kunci genre)
+    E --> J{apakah buku kosong?}
+    J --> |Tidak| K(Tampilkan:
+    Tidak ada buku)
+    J --> |Ya| L(Loop:
+    Tampilkan semua data buku)
+    K --> M(Tunggu input enter)
+    L --> M(Tunggu input enter)
+    M --> C
+    F --> N(Loop: Cari judul yang cocok case-insensitive)
+    N --> O{Hasil ditemukan?}
+    O --> |Tidak| Q(Tampilkan:
+    Buku tidak ditemukan)
+    O --> |Ya| P(Tampilkan hasil pencarian)
+    Q --> R(Tunggu input enter)
+    P --> R(Tunggu input enter)
+    R --> C
+    H --> S(Loop: Cari penulis yang cocok case-insensitive)
+    S --> T{Hasil ditemukan?}
+    T --> |Tidak| U(Tampilkan:
+    Buku tidak ditemukan)
+    T --> |Ya| V(Tampilkan hasil pencarian)
+    U --> W(Tunggu input enter)
+    V --> W
+    W --> C
+    I --> Y(Loop: Cari genre yang cocok case-insensitive)
+    Y --> Z{Hasil ditemukan?}
+    Z --> |Tidak| a(Tampilkan:
+    Buku tidak ditemukan)
+    Z --> |Ya| b(Tampilkan hasil pencarian)
+    a --> c(Tunggu input enter)
+    b --> c
+    c --> C
+```
+
+Kontributor
+| No | Nama Lengkap | NIM | Akun GitHub | Peran |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| 1 | Joseph Adi Sanuri  | 250211060112  | [Content Cell](https://github.com/p4seppp)  | Project Maintainer  |
+| 2 | Kezia Florezita  | 250211060094  | [Content Cell](https://github.com/dokjaakim)  | Contributor  |
+| 3 | Gamaliel Calvyn Hizkia Kaligis  | 250211060111  | [Content Cell](https://github.com/gamlklgs)  | Contributor  |
